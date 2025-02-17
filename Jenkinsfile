@@ -8,7 +8,7 @@ pipeline {
             }
         }
 
-        stage("Test") {
+        stage("Tested") {
             steps {
                 wrap([$class: "Xvfb", debug: true, autoDisplayName: true]) {
                     sh "mvn test"
